@@ -1,0 +1,10 @@
+<div class="menu">
+         {% if request.user.is_authenticated %}
+                Користувач {{ request.user.username }},
+                <a href="{% url "logout" %} " >Вихід</a>
+          {% else %}
+                <a href="{% url "login" %}">Авторизація</a>
+         {% endif %}
+
+
+        </div>

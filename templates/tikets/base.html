@@ -1,0 +1,44 @@
+{% load static %}
+{% static "images/gerb.png" as myimg %}
+
+
+
+<html>
+    <head>
+        <title>HelpDesk SBI</title>
+
+
+        <link rel="stylesheet" href="{% static 'css/base.css' %}">
+        <link rel="stylesheet" href="{% static 'css/header.css' %}">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="{% static 'js/Ajax_tiket.js' %}"></script>
+        <script src="{% static 'js/Ajax_Create_Tiket.js' %}"></script>
+        {% load bootstrap4 %}
+        {% bootstrap_css %}
+        {% bootstrap_javascript %}
+
+
+    </head>
+    <body>
+{% csrf_token %}
+
+
+      <header id="layout-header">
+         <section class="header-bg">
+
+          <h3 class="text-center">Технічна допомога Державного бюро розлідувань</h3>
+          <img class="center" src="{{ myimg }}"  />
+         </section>
+       </header>
+
+
+    <div class="wrapper">
+     {% include 'tikets/menu.html' %}
+
+     {% block content %}
+
+     {% endblock %}
+    </div>
+
+    </body>
+</html>

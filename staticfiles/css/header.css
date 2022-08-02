@@ -1,0 +1,9 @@
+header .header-bg {
+ background-image:url(../images/headerbg.png);
+ background-repeat: no-repeat;
+ -webkit-background-size: cover;
+ background-size: cover;
+ padding-top: 25px;
+ padding-left: 30px;
+ padding-right: 30px;
+}

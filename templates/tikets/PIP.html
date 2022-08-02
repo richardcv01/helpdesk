@@ -1,0 +1,48 @@
+
+
+        <table class="table">
+                    <tr>
+                        <td><label >Введіть прізвище та ім'я</label></td>
+                        <td><input  name="tikets_PIP"
+                                   type="text" class="form-control"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label >Email:</label></td>
+                        <td><input  name="tikets_email"
+                                   type="email" class="form-control"></td>
+                    </tr>
+
+                     <tr>
+                        <td><label >Номер телефону:</label></td>
+                        <td><input  name="tikets_Phone"
+                                   type="tel" class="form-control"></td>
+                     </tr>
+
+                     <tr>
+                        <td><label >Номер кабінету та корпус:</label></td>
+                        <td><input  name="tikets_Location"
+                                   type="text" class="form-control"></td>
+                    </tr>
+
+                     <tr>
+                         <td>Категорія</td>
+                         <td>
+                         <select class="form-control" name="tikets_Topic">
+                             {% for topic in topic_list %}
+                         <option value={{ topic.id }}>   {{ topic.topic_text }}  </option>
+
+                             {% endfor %}
+                      </select>
+                         </td>
+                     <tr>
+                        <td><label >Короткий опис проблеми:</label></td>
+                        <td>
+                            <textarea rows="5" name="tikets_text"
+                                   type="text" class="form-control">
+                            </textarea>
+                        </td>
+                       </tr>
+
+
+                </table>

@@ -1,0 +1,100 @@
+
+form.forindex { text-align: center; }
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+
+.text-center {
+    text-align: center!important;
+}
+
+.wrapper {
+    position: relative;
+    min-height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 1220px;
+    background-color: #fff;
+}
+body * {
+    word-wrap: break-word;
+}
+body {
+    height: 100%;
+    overflow: auto;
+    overflow-x: hidden;
+    font-size: 16px;
+    line-height: 1;
+    font-family: ProbaProRegular,SourceSansPro;
+    background-color: #dee4e7;
+}
+
+a.button1 {
+  display: inline-block;
+  background: red;
+  color: #fff;
+  padding: 12px;
+  border-radius: 3px;
+  text-decoration: none;
+  font-family: Tahoma;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 100;
+  width: 200px;
+}
+a.button2 {
+  display: inline-block;
+  background: green;
+  color: #fff;
+  padding: 12px;
+  border-radius: 3px;
+  text-decoration: none;
+  font-family: Tahoma;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 100;
+  width: 200px;
+}
+a.button3 {
+  display: inline-block;
+  background: blue;
+  color: #fff;
+  padding: 12px;
+  border-radius: 3px;
+  text-decoration: none;
+  font-family: Tahoma;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 100;
+  width: 200px;
+}
+
+.menu {
+  text-align: right;
+}
+.menu div {
+  display: inline-block; /* см. как изменить промежуток между inline-block элементами */
+  width: 8em;
+  max-width: 100%;
+  min-height: 2em;
+  border: 1px solid orange;
+  vertical-align: middle; /* см. как убрать отступ под inline-block элементами */
+  text-align: start;
+  background: #fff5d7;
+}
+
+#table tbody tr:nth-child(odd){
+	background: #fff;
+}
+
+/* Четные строки */
+#table tbody tr:nth-child(even){
+	background: #F7F7F7;
+}
+
+ th {
+    width: 20%;  /* Optional */
+}
